@@ -3,6 +3,7 @@
 /build/
 /composer.phar
 /vendor/
+/tests/
 /web/bundles/
 /var/
 !var/cache/.gitkeep
