@@ -1,0 +1,8 @@
+authenticate:
+    type:     annotation
+    prefix:   /api/v1
+    resource: "@AppBundle/Controller/UsersController.php"
+
+register:
+    type:     annotation
+    resource: "@AppBundle/Controller/DefaultController.php"
