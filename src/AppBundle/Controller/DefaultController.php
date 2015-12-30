@@ -15,22 +15,8 @@ class DefaultController extends Controller
     /**
      * @Route("/", name="homepage")
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {
-    }
-
-    /**
-     * @Route("/register")
-     * @Method("POST")
-     */
-    public function registerAction(Request $req)
-    {
-      $userManager = $this->get('fos_user.user_manager');
-      $user = $userManager->createUser();
-      $user->setUsername($req->get('username'));
-      $user->setEmail($req->get('email'));
-      $user->setPassword($req->get('password'));
-      $userManager->updateUser($user);
-      return array('user' => $user);
+      return "Wellcome Symfony-Rest";
     }
 }
