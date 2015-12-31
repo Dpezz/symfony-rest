@@ -17,6 +17,6 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-      return "Wellcome Symfony-Rest";
+      return "Welcome to Symfony-Rest";
     }
 }
